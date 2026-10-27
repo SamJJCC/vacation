@@ -80,3 +80,7 @@ input[type="number"],select,[type="date"]{
     padding: 2rem;
    
 }
+
+footer{
+    text-align: center;
+}
