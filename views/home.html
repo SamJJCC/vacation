@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Vacation</title>
+    <link rel="icon" href="images\vacation-favicon.webp">
+    <link rel="Stylesheet" href="styles/styles.css">
+    <script src="scripts/vacation.js" defer></script>
+</head>
+<body>
+    <form id="vacation-form" action="/submit" method="post">
+
+            <!-- contact info -->
+             
+             <div id="main-div">
+                <div id="header-div">
+
+                        <div class="image-text">
+                    <h1>Book Your Dream Vacation</h1>
+                    </div>
+                    <img src="images/vacation-background.jpg" alt="image of a beach" >
+                </div>
+               
+                <div id="form-div">
+                <label for="destination">Destination</label>
+                   <span class="err" id="err-des">Please Choose a Destination</span>
+                <select id="destination" name="destination">
+                    <option value="none">Choose a destination:</option>
+                    <option value="bali">Bali,Indonesia</option>
+                    <option value="paris">Paris,France</option>
+                    <option value="tokyo">Tokyo,Japan</option>
+                    <option value="maldives">Maldives </option>
+                    <option value="ny">New York City, USA </option>
+                </select>
+                
+
+                <div class="form-row">
+                <div class="field">
+                <label for="departure">Departure Date</label>
+                <input type="date" id="departure" name="departure">
+                </div>
+
+
+                <div class="field">
+                <label for="num-travelers">Number of travelers</label> 
+                <span class="err" id="err-travelers">Please enter number of travelers</span>
+                <input type="number" id="num-travelers" name="num-travelers">
+               </div>
+
+                
+             </div>
+</div>
+            
+             
+             <button type="submit" id="submit-button">Find My Vacation</button>
+        </form>
+        </div>
+</body>
+</html>
